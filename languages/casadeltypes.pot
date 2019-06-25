@@ -1,0 +1,79 @@
+# Copyright (C) 2019 Mitch Hijlkema
+# This file is distributed under the same license as the Casadeltypes plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Casadeltypes 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/casadeltypes\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-06-25T11:51:22+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.2.0\n"
+"X-Domain: casadeltypes\n"
+
+#. Plugin Name of the plugin
+msgid "Casadeltypes"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://casadelvino.nl/"
+msgstr ""
+
+#. Description of the plugin
+msgid "This plugin adds the custom post types used by Casa del Vino et al."
+msgstr ""
+
+#. Author of the plugin
+msgid "Mitch Hijlkema"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://doedejaarsma.nl/"
+msgstr ""
+
+#: includes/class-cdt-options.php:30
+msgid "Wine Post Types Settings"
+msgstr ""
+
+#: includes/class-cdt-options.php:31
+msgid "These settings make sure you get the most out of the Casadeltypes plugin"
+msgstr ""
+
+#: includes/class-cdt-options.php:45
+msgid "Region Settings"
+msgstr ""
+
+#: includes/class-cdt-options.php:46
+msgid "Fill in the fields to use regions."
+msgstr ""
+
+#: includes/class-cdt-options.php:62
+msgid "Supports"
+msgstr ""
+
+#: includes/class-cdt-options.php:66
+msgid "Title"
+msgstr ""
+
+#: includes/class-cdt-options.php:67
+msgid "Editor"
+msgstr ""
+
+#: includes/class-cdt-options.php:68
+msgid "Attributes"
+msgstr ""
+
+#: includes/class-cdt-options.php:78
+msgid "Hierarchical"
+msgstr ""
+
+#: includes/class-cdt-options.php:89
+msgid "Menu icon"
+msgstr ""
+
+#: includes/class-cdt-options.php:100
+msgid "Slug"
+msgstr ""
