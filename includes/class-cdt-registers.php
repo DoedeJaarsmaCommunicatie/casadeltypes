@@ -5,9 +5,16 @@ use PostTypes\PostType;
 class cdt_registers {
 
 	/**
-	 * cdt_registers constructor.
+	 * Cdt_registers constructor.
 	 */
 	public function __construct() {
+		add_action( 'after_setup_theme', [ $this, 'boot' ] );
+	}
+
+	/**
+	 * Boots the class.
+	 */
+	public function boot() {
 		$this->register_region();
 		$this->register_domain();
 		$this->register_grape();
@@ -23,29 +30,37 @@ class cdt_registers {
 			]
 		);
 
+		$option = [];
+
 		if ( get_theme_mod( 'cdelt_region_slug' ) ) {
-			$region->options(
-				[
-					'rewrite' => [
-						'slug' => get_theme_mod( 'cdelt_region_slug' ),
-					],
-				]
-			);
+			$option ['rewrite'] = [
+				'slug' => get_theme_mod( 'cdelt_region_slug' ),
+			];
 		}
 
 		if ( get_theme_mod( 'cdelt_region_hierarchical' ) ) {
-			$region->options(
-				[
-					'hierarchical' => true,
-				]
-			);
+			$option['hierarchical'] = true;
 		}
+
+		if ( get_theme_mod( 'cdelt_region_supports' ) ) {
+			$option['supports'] = get_theme_mod( 'cdelt_region_supports' );
+		}
+		
+		if ( get_theme_mod( 'cdelt_region_rest' ) ) {
+			$option['show_in_rest'] = get_theme_mod( 'cdelt_region_rest' );
+		}
+
+		$region->options( $option );
 
 		if ( get_theme_mod( 'cdelt_region_dashicon' ) ) {
 			$region->icon( 'dashicons-' . get_theme_mod( 'cdelt_region_dashicon' ) );
 		}
 
 		$region->register();
+
+		if ( get_theme_mod( 'cdelt_region_slug' ) ) {
+			$region->flush();
+		}
 	}
 
 	protected function register_domain() {

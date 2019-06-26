@@ -16,6 +16,12 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/DoedeJaarsmaCommunicatie/casadeltypes/',
+	__FILE__,
+	'casadeltypes'
+);
+
 add_filter( 'kirki_telemetry', '__return_false' );
 
 new cdt_options();

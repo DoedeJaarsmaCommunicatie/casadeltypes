@@ -66,6 +66,7 @@ class cdt_options {
 					'title'           => __( 'Title', 'casadeltypes' ),
 					'editor'          => __( 'Editor', 'casadeltypes' ),
 					'page-attributes' => __( 'Attributes', 'casadeltypes' ),
+					'thumbnail'  => __( 'Thumbnail', 'casadeltypes' ),
 				],
 			]
 		);
@@ -76,6 +77,17 @@ class cdt_options {
 				'type'     => 'checkbox',
 				'settings' => 'cdelt_region_hierarchical',
 				'label'    => esc_html__( 'Hierarchical', 'casadeltypes' ),
+				'section'  => 'cdelt_settings_region_section',
+				'priority' => 20,
+			]
+		);
+
+		\Kirki::add_field(
+			'cdelt',
+			[
+				'type'     => 'checkbox',
+				'settings' => 'cdelt_region_rest',
+				'label'    => esc_html__( 'Toon in rest API', 'casadeltypes' ),
 				'section'  => 'cdelt_settings_region_section',
 				'priority' => 20,
 			]
