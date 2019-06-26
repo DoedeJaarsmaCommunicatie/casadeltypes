@@ -2,7 +2,8 @@
     "require": {
         "jjgrainger/posttypes": "^2.0",
         "htmlburger/carbon-fields": "^3.1",
-        "yahnis-elsts/plugin-update-checker": "^4.6"
+        "yahnis-elsts/plugin-update-checker": "^4.6",
+        "aristath/kirki": "^3.0"
     },
   "autoload": {
     "files": [
