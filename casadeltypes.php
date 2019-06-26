@@ -7,7 +7,7 @@
  * Author URI:      https://doedejaarsma.nl/
  * Text Domain:     casadeltypes
  * Domain Path:     /languages
- * Version:         1.0.1
+ * Version:         1.0.2
  *
  * @package         Casadeltypes
  */
