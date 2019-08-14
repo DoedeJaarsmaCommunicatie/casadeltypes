@@ -66,7 +66,7 @@ class cdt_options {
 					'title'           => __( 'Title', 'casadeltypes' ),
 					'editor'          => __( 'Editor', 'casadeltypes' ),
 					'page-attributes' => __( 'Attributes', 'casadeltypes' ),
-					'thumbnail'  => __( 'Thumbnail', 'casadeltypes' ),
+					'thumbnail'       => __( 'Thumbnail', 'casadeltypes' ),
 				],
 			]
 		);
