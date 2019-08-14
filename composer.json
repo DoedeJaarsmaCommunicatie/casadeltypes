@@ -6,10 +6,11 @@
         "aristath/kirki": "^3.0"
     },
   "autoload": {
+    "psr-4": {
+      "CasaDelTypes\\": "includes/"
+    },
     "files": [
-      "vendor/aristath/kirki/kirki.php",
-      "includes/class-cdt-options.php",
-      "includes/class-cdt-registers.php"
+      "vendor/aristath/kirki/kirki.php"
     ]
   }
 }

@@ -1,9 +1,21 @@
 <?php
+/**
+ * This class registers the custom post types.
+ *
+ * @author Mitch Hijlkema
+ * @package CasaDelTypes;
+ */
+namespace CasaDelTypes;
 
+use CasaDelTypes\Types\Region;
 use PostTypes\PostType;
 
-class cdt_registers {
-
+/**
+ * Class Registers
+ *
+ * @package CasaDelTypes
+ */
+class Registers {
 	/**
 	 * Cdt_registers constructor.
 	 */
@@ -26,10 +38,15 @@ class cdt_registers {
 	 * @return void
 	 */
 	protected function register_region(): void {
-		( new cdt_region() )->register();
+		( new Region() )->register();
 	}
 
-	protected function register_domain() {
+	/**
+	 * Registers the domain post type.
+	 *
+	 * @return void
+	 */
+	protected function register_domain(): void {
 		$domain = new PostType(
 			[
 				'name'     => 'producent',
@@ -42,7 +59,12 @@ class cdt_registers {
 		$domain->register();
 	}
 
-	protected function register_grape() {
+	/**
+	 * Registers the grape post type.
+	 *
+	 * @return void
+	 */
+	protected function register_grape(): void {
 		$grape = new PostType(
 			[
 				'name'     => 'druif',

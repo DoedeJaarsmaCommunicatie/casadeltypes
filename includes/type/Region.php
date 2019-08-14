@@ -1,11 +1,12 @@
 <?php
+namespace CasaDelTypes\Types;
 
 use PostTypes\PostType;
 
 /**
  * Class cdt_region
  */
-class cdt_region {
+class Region {
 	/**
 	 * Registers the post type
 	 *

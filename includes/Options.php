@@ -1,6 +1,7 @@
 <?php
+namespace CasaDelTypes;
 
-class cdt_options {
+class Options {
 
 	/**
 	 * cdk_options constructor.

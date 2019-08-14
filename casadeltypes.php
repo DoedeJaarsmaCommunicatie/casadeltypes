@@ -7,16 +7,22 @@
  * Author URI:      https://doedejaarsma.nl/
  * Text Domain:     casadeltypes
  * Domain Path:     /languages
- * Version:         1.0.2
+ * Version:         1.1.0
  *
  * @package         Casadeltypes
  */
 
-// Your code starts here.
+if ( ! defined( 'WPINC' ) ) {
+	die( 'No script kiddies.' );
+}
+
+define( 'CDTYPES_VERSION', '1.1.0' );
+
+define( 'CDTYPES_PLUGIN_FILE', __FILE__ );
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+$my_update_checker = Puc_v4_Factory::buildUpdateChecker(
 	'https://github.com/DoedeJaarsmaCommunicatie/casadeltypes/',
 	__FILE__,
 	'casadeltypes'
@@ -24,5 +30,5 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 
 add_filter( 'kirki_telemetry', '__return_false' );
 
-new cdt_options();
-new cdt_registers();
+$plugin = new \CasaDelTypes\Plugin();
+$plugin->init();
