@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0
+
+1. All types now have settings.
+
 ## 1.0.2
 
 1. Added more info to the readme

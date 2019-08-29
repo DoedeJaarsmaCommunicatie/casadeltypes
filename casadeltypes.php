@@ -7,7 +7,7 @@
  * Author URI:      https://doedejaarsma.nl/
  * Text Domain:     casadeltypes
  * Domain Path:     /languages
- * Version:         1.1.0
+ * Version:         1.2.0
  *
  * @package         Casadeltypes
  */
@@ -16,7 +16,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die( 'No script kiddies.' );
 }
 
-define( 'CDTYPES_VERSION', '1.1.0' );
+define( 'CDTYPES_VERSION', '1.2.0' );
 
 define( 'CDTYPES_PLUGIN_FILE', __FILE__ );
 

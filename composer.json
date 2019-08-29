@@ -12,5 +12,8 @@
     "files": [
       "vendor/aristath/kirki/kirki.php"
     ]
+  },
+  "config": {
+    "optimize-autoloader": true
   }
 }

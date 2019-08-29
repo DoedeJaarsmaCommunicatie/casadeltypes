@@ -7,6 +7,8 @@
  */
 namespace CasaDelTypes;
 
+use CasaDelTypes\Types\Domain;
+use CasaDelTypes\Types\Grape;
 use CasaDelTypes\Types\Region;
 use PostTypes\PostType;
 
@@ -47,16 +49,7 @@ class Registers {
 	 * @return void
 	 */
 	protected function register_domain(): void {
-		$domain = new PostType(
-			[
-				'name'     => 'producent',
-				'singular' => 'Producent',
-				'plural'   => 'Producenten',
-				'slug'     => 'producent',
-			]
-		);
-
-		$domain->register();
+		( new Domain() )->register();
 	}
 
 	/**
@@ -65,15 +58,6 @@ class Registers {
 	 * @return void
 	 */
 	protected function register_grape(): void {
-		$grape = new PostType(
-			[
-				'name'     => 'druif',
-				'singular' => 'Druif',
-				'plural'   => 'Druiven',
-				'slug'     => 'druiven',
-			]
-		);
-
-		$grape->register();
+		( new Grape() )->register();
 	}
 }
