@@ -22,6 +22,7 @@ abstract class Option {
 					'editor'          => __( 'Editor', 'casadeltypes' ),
 					'page-attributes' => __( 'Attributes', 'casadeltypes' ),
 					'thumbnail'       => __( 'Thumbnail', 'casadeltypes' ),
+					'excerpt'		  => __( 'Excerpt', 'casadeltypes' ),
 				],
 			]
 		);
