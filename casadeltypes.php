@@ -7,28 +7,26 @@
  * Author URI:      https://doedejaarsma.nl/
  * Text Domain:     casadeltypes
  * Domain Path:     /languages
- * Version:         1.2.1
+ * Version:         1.3.0
  *
  * @package         Casadeltypes
  */
 
-if ( ! defined( 'WPINC' ) ) {
-	die( 'No script kiddies.' );
-}
+defined('WPINC') || die('No script kiddies.');
 
-define( 'CDTYPES_VERSION', '1.2.1' );
+define('CDTYPES_VERSION', '1.3.0');
 
-define( 'CDTYPES_PLUGIN_FILE', __FILE__ );
+define('CDTYPES_PLUGIN_FILE', __FILE__);
 
 require_once __DIR__ . '/vendor/autoload.php';
 
 $my_update_checker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/DoedeJaarsmaCommunicatie/casadeltypes/',
-	__FILE__,
-	'casadeltypes'
+    'https://github.com/DoedeJaarsmaCommunicatie/casadeltypes/',
+    __FILE__,
+    'casadeltypes'
 );
 
-add_filter( 'kirki_telemetry', '__return_false' );
+add_filter('kirki_telemetry', '__return_false');
 
 $plugin = new \CasaDelTypes\Plugin();
 $plugin->init();
