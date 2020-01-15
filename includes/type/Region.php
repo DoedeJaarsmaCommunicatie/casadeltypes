@@ -33,6 +33,9 @@ class Region extends Type
             $type->taxonomy('country');
 
             $country = new Taxonomy('country');
+            $country->options([
+                'show_in_rest'  => true
+            ]);
             $country->register();
 
             do_action("casadeltypes/type/{$type->name}/country/registered", $type);
