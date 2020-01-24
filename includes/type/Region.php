@@ -34,7 +34,10 @@ class Region extends Type
 
             $country = new Taxonomy('country');
             $country->options([
-                'show_in_rest'  => true
+                'show_in_rest'  => true,
+                'rewrite' => [
+                    'slug' => __('land')
+                ]
             ]);
             $country->register();
 
